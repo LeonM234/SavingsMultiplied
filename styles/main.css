@@ -1,0 +1,195 @@
+/* Colors
+/* Dark Teal #69C4CC */
+/* Light Teal: #CFEFEE */
+
+h1, h2, h3, h4, h5, h6: { margin: 0; }
+body { background-color: #69C4CC; }
+
+/* Header Styles */
+
+header { 
+  background-color: #CFEFEE; 
+  padding-top: 1em;
+}
+
+#sign_in ul {
+  position: absolute;
+  top: 0;
+  left: 60%;
+}
+
+#sign_in ul li {
+  display: inline;
+}
+
+#sign_in ul li a {
+  text-decoration: none;
+  color: rgb(21, 149, 158);
+}
+
+#sign_in ul li:nth-child(1):after {
+  content: " | ";
+  padding: 0 0.3em;
+  color: rgb(21, 149, 158);
+}
+
+#top_links ul {
+  list-style-type: none;
+  margin: 0 0 0 20em;
+}
+
+#top_links ul li {
+  position: relative;
+  display: inline;
+  padding: 0 0.5em;
+  margin: 0;
+}
+
+#top_links ul li a {
+  text-decoration: none;
+  padding: 0.25em 1em;
+  color: #FFFFFF;
+  font-size: 1em;
+}
+
+#top_links ul li:nth-child(1) {
+  background-color: rgb(117, 203, 209);
+  border-radius: 25px 25px 25px 25px;
+}
+
+#top_links ul li:nth-child(2) {
+  background-color: rgb(140, 184, 44);
+  border-radius: 25px 25px 25px 25px;
+}
+
+#top_links ul li:nth-child(3) {
+  background-color: rgb(112, 44, 142);
+  border-radius: 25px 25px 25px 25px;
+}
+
+#top_links ul li:nth-child(4) {
+  background-color: rgb(236, 0, 140);
+  border-radius: 25px 25px 25px 25px;
+}
+
+
+h1 {
+  margin-right: 11em;
+  margin-bottom: 0em;
+  color: rgb(95, 37, 120);
+  word-wrap: break-word;
+  width: 5em;
+  font-size: 3em;
+}
+
+h1 span {
+  color: rgb(232, 1, 138);
+}
+
+h3 {
+  margin: 0.5em 0.5em 1em 18em;
+  font-family: 'Comfortaa', cursive;
+  font-weight: 700;
+  color: rgb(118, 203, 210);
+}
+
+nav#main { 
+  background-color: #F3CECD; 
+}
+
+nav#main ul {
+  float: none;
+  text-align: center;
+  margin-bottom: 0;
+  margin-top: 0;
+}
+
+#main ul li {
+   display: inline-block;
+   padding: 0 0.7em;
+   margin-left: 1em;
+   font-family: 'Comfortaa', cursive;
+   font-weight: 800;
+   color: rgb(107, 20, 70);
+}
+
+#main ul li a {
+  text-decoration: none;
+}
+
+form input {
+  width: 4.2em;
+}
+
+/* Middle Styles */
+
+section {
+  background-color: #FFFFFF;
+  border-radius: 20px 20px 0 0;
+  margin: 0 10em;
+  overflow: hidden;
+}
+
+body > section {
+  border-radius: 0px 0px 20px 20px;
+}
+
+div#body {
+  width: 15em;
+  margin: 0;
+}
+
+div#body h2 {
+  margin-top: 0;
+  font-family: 'Comfortaa', cursive;
+  font-weight: 900;
+  font-size: 1.2em;
+  color: rgb(138, 182, 46);
+}
+
+#body p {
+  color: rgb(88, 180, 187);
+}
+
+ul li {
+  list-style-type: none;
+}
+
+#images {
+  float: right;
+}
+
+#social li {
+  display: inline;
+}
+
+#social li a {
+  text-decoration: none;
+  padding: 0 0.5em;
+}
+
+
+/* Footer Styles */
+
+footer {
+  padding: 0 10em;
+  margin: 0 5em;
+}
+
+footer nav ul li {
+  display: inline;
+}
+
+footer nav ul li a {
+  text-decoration: none;
+  font-size: 0.7em;
+  margin: 0 0.5em;
+  color: rgb(213, 241, 240);
+}
+
+footer nav ul li:nth-child(-n+5):after {
+  content: " | ";
+  color: rgb(213, 241, 240);
+  font-size: 0.7em;
+  padding: 0 0.4em;
+}
