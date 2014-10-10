@@ -2,20 +2,47 @@
 /* Dark Teal #69C4CC */
 /* Light Teal: #CFEFEE */
 
-h1, h2, h3, h4, h5, h6: { margin: 0; }
-body { background-color: #69C4CC; }
+/* Starting Point Styles
+========================*/
 
-/* Header Styles */
+h1, h2, h3, h4, h5, h6: { margin: 0; }
+body { 
+  background-color: #69C4CC;
+}
+
+ul {
+  padding: 0;
+}
+
+/* Header Styles 
+=================*/
+
+/*
+.container {
+  max-width: 960px;
+  margin: 0 auto;
+}
+*/
 
 header { 
   background-color: #CFEFEE; 
-  padding-top: 1em;
+  padding-top: 1.5em;
+  max-width: 100%;
+}
+
+header section {
+  max-width: 780px;
+  margin: 0 auto;
+  max-height: 11em;
 }
 
 #sign_in ul {
+  float: right;
   position: absolute;
   top: 0;
-  left: 60%;
+  left: 65%;
+  margin: 0 0 1.5em 0;
+  clear: right;
 }
 
 #sign_in ul li {
@@ -35,13 +62,17 @@ header {
 
 #top_links ul {
   list-style-type: none;
-  margin: 0 0 0 20em;
+  border: 1px solid red;
+  float: right;
+  clear: both;
+  padding-right: 1em;
+  max-width: 55%;
+  margin: 0;
 }
 
 #top_links ul li {
-  position: relative;
-  display: inline;
-  padding: 0 0.5em;
+  display: inline-block;
+  padding: 0.1em 0.7em;
   margin: 0;
 }
 
@@ -74,11 +105,11 @@ header {
 
 
 h1 {
-  margin-right: 11em;
-  margin-bottom: 0em;
+  float: left;
+  clear: right;
+  margin: 0.5em 0.1em;
   color: rgb(95, 37, 120);
-  word-wrap: break-word;
-  width: 5em;
+  width: 40%;
   font-size: 3em;
 }
 
@@ -87,7 +118,10 @@ h1 span {
 }
 
 h3 {
-  margin: 0.5em 0.5em 1em 18em;
+  float: right;
+  clear: left;
+  margin-right: 0.5em;
+  width: 55%;
   font-family: 'Comfortaa', cursive;
   font-weight: 700;
   color: rgb(118, 203, 210);
@@ -95,51 +129,62 @@ h3 {
 
 nav#main { 
   background-color: #F3CECD; 
+  margin: 0 auto;
+  padding: 0;
 }
 
 nav#main ul {
-  float: none;
   text-align: center;
   margin-bottom: 0;
   margin-top: 0;
+  padding: 0.2em 0;
 }
 
 #main ul li {
-   display: inline-block;
-   padding: 0 0.7em;
-   margin-left: 1em;
-   font-family: 'Comfortaa', cursive;
-   font-weight: 800;
-   color: rgb(107, 20, 70);
+  display: inline-block;
+  font-family: 'Comfortaa', cursive;
+  font-weight: 900;
+  color: rgb(107, 20, 70);
 }
 
 #main ul li a {
   text-decoration: none;
+  padding: 0.5em 0.5em;
+  margin: 0 1em;
 }
 
-form input {
-  width: 4.2em;
+#search_term {
+  width: 5em;
+  text-align: center;
+  border-radius: 18px;
 }
 
-/* Middle Styles */
+/* Middle Styles 
+==================*/
 
 section {
   background-color: #FFFFFF;
   border-radius: 20px 20px 0 0;
-  margin: 0 10em;
+  max-width: 780px;
+  margin: 0 auto;
   overflow: hidden;
 }
 
-body > section {
+.middle {
   border-radius: 0px 0px 20px 20px;
 }
 
-div#body {
-  width: 15em;
-  margin: 0;
+#body_content {
+  max-width: 55%;
+  margin: 0 auto;
 }
 
-div#body h2 {
+#body_content,
+#social {
+  float: left;
+}
+
+#body_content h2 {
   margin-top: 0;
   font-family: 'Comfortaa', cursive;
   font-weight: 900;
@@ -147,8 +192,16 @@ div#body h2 {
   color: rgb(138, 182, 46);
 }
 
-#body p {
+#body_content p {
   color: rgb(88, 180, 187);
+}
+
+#body_content a {
+  background-color: rgb(236, 0, 140);
+  border-radius: 25px;
+  padding: 0.1em 0.9em;
+  text-decoration: none;
+  color: #FFFFFF;
 }
 
 ul li {
@@ -157,10 +210,30 @@ ul li {
 
 #images {
   float: right;
+  clear: left;
+  max-width: 45;
+  margin: 0 auto;
+  margin-top: 1em;
+}
+
+#images li img {
+  height: auto; 
+  margin-right: 1.5em;
+}
+
+
+/* Social Links
+================*/
+
+#social {
+  padding: 0;
 }
 
 #social li {
-  display: inline;
+  display: inline-block;
+  margin: 0;
+  padding: 0;
+  max-width: 70%;
 }
 
 #social li a {
@@ -169,15 +242,16 @@ ul li {
 }
 
 
-/* Footer Styles */
+/* Footer Styles 
+=================*/
 
 footer {
-  padding: 0 10em;
-  margin: 0 5em;
+  margin: 0 auto;
+  max-width: 65%;
 }
 
 footer nav ul li {
-  display: inline;
+  display: inline-block;
 }
 
 footer nav ul li a {
@@ -192,4 +266,73 @@ footer nav ul li:nth-child(-n+5):after {
   color: rgb(213, 241, 240);
   font-size: 0.7em;
   padding: 0 0.4em;
+}
+
+/* Clearfix
+============*/
+
+.section:after {
+  content: " ";
+  display: table;
+  clear: both;
+}
+
+
+/* Responsive Stuff */
+/* What she used...
+@media screen and (max-width: 800px) {
+  ul#social li {
+    width: 50%;
+    margin: 0;
+  }
+}
+
+Change the image sizes (because they come out of the box fixed).  Change their max
+width to be 100%, or something similar.  Also use clears.  May need to just clear odds, especially
+on the bottom social links, along with other formatting.
+*/
+
+/* Responsive
+==============*/
+
+@media screen and (max-width: 800px) {
+  ul#images {
+    display: none;
+  }
+  #social li {
+    max-width: 47.5%;
+    margin: 0;
+    float: left;
+  }
+  social li:nth-child(2n+1){
+    clear: left;
+    margin-right: 5%;
+  }
+}
+
+/* Modal
+=========*/
+
+.login-modal {
+  display: none;
+}
+
+.lightbox {
+  background: #000;
+  opacity: .5;
+  position: fixed;
+  top: 0;
+  height: 100%;
+  width: 100%;
+}
+
+.login-form {
+  border: 2px solid red;
+  width: 300px;
+  margin: 150px 0 0 -150px;
+  text-align: center;
+  background: #69C4CC;
+  position: absolute;
+  top: 0;
+  left: 50%;
 }

@@ -4,13 +4,16 @@
     <title>Leon's SavingsMultiplied</title>
     <link rel="stylesheet" type="text/css" href="styles/normalize.css">
     <link rel="stylesheet" type="text/css" href="styles/main.css">
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <meta charset="utf-8" />
     <link href='http://fonts.googleapis.com/css?family=Comfortaa:400,700,300' rel='stylesheet' type='text/css'>
   </head>
   <body>
+  <div class="container">
     <header>
         <nav id="sign_in">
           <ul>
-            <li><a href="#">sign in</a></li>
+            <li><a href="#" class="login">sign in</a></li>
             <li><a href="#">sign up</a></li>
           </ul>
         </nav>
@@ -43,8 +46,8 @@
         </ul>
       </nav>
     </header>
-    <section>
-      <div id="body">
+    <section class="middle">
+      <div id="body_content">
         <h2>We're making one aspect of life easier for parents of multiples:</h2>
         <p>buying and selling gently used sets of clothes!</p>
         <a href="#">Shop Now!</a>
@@ -55,10 +58,10 @@
         <li><img src="images/quads.jpg" /></li>
       </ul>
       <ul id="social">
-        <li><a href="#">find us on facebook</a></li>
-        <li><a href="#">follow us on twitter</a></li>
-        <li><a href="#">Message Boards</a></li>
-        <li><a href="#">Special Offers</a></li>
+        <li><a href="#"><img src="images/facebook_callout.png" alt="find us on facebook"></a></li>
+        <li><a href="#"><img src="images/twitter_callout.png" alt="follow us on twitter"></a></li>
+        <li><a href="#"><img src="images/msg-board.png" alt="Message Boards"></a></li>
+        <li><a href="#"><img src="images/special_offers_callout.png" alt="Special Offers"></a></li>
       </ul>
     </section>
     <footer>
@@ -73,5 +76,49 @@
         </ul>
       </nav>
     </footer>
+    <div class="login-modal">
+      <div class="lightbox"></div>
+      <div class="login-form">
+	<form>
+	  <label>Username</label>
+	  <input type="text" placeholder="username">
+	  <label>Password</label>
+	  <input type="password" placeholder="password">
+	  <input type="submit" value="Login">
+	  <input type="button" value="Cancel">
+	</form>
+      </div>
+    </div>
+  </div>
   </body>
+  <script>
+    function hide(element) {
+      element.style.display = "none";
+    }
+
+    function show(element) {
+      element.style.display = "block";
+    }
+  
+    var signIn = document.querySelector('.login');
+    var cancel = document.querySelector('input[value="Cancel"]');
+    var lightbox = document.querySelector('.lightbox');
+    var loginModal = document.querySelector('.login-modal');
+
+    signIn.addEventListener('click', function(){
+      show(loginModal);
+    });
+
+
+    cancel.addEventListener('click', function(){
+      hide(loginModal);
+    });
+
+    
+    lightbox.addEventListener('click', function(){
+      hide(loginModal);
+    });
+  </script>
 </html>
+
+
