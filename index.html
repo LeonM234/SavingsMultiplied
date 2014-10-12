@@ -52,11 +52,13 @@
         <p>buying and selling gently used sets of clothes!</p>
         <a href="#">Shop Now!</a>
       </div>
-      <ul id="images">
-        <li><img src="images/twins.jpg" /></li>
-        <li><img src="images/triplets.jpg" /></li>
-        <li><img src="images/quads.jpg" /></li>
-      </ul>
+      <div class="mid_images">
+	<ul>
+	  <li><img src="images/twins.jpg" /></li>
+	  <li><img src="images/triplets.jpg" /></li>
+	  <li><img src="images/quads.jpg" /></li>
+       </ul>
+      </div>
       <ul id="social">
         <li><a href="#"><img src="images/facebook_callout.png" alt="find us on facebook"></a></li>
         <li><a href="#"><img src="images/twitter_callout.png" alt="follow us on twitter"></a></li>
@@ -90,35 +92,8 @@
       </div>
     </div>
   </div>
+  <script src="scripts/main.js"></script>
   </body>
-  <script>
-    function hide(element) {
-      element.style.display = "none";
-    }
-
-    function show(element) {
-      element.style.display = "block";
-    }
-  
-    var signIn = document.querySelector('.login');
-    var cancel = document.querySelector('input[value="Cancel"]');
-    var lightbox = document.querySelector('.lightbox');
-    var loginModal = document.querySelector('.login-modal');
-
-    signIn.addEventListener('click', function(){
-      show(loginModal);
-    });
-
-
-    cancel.addEventListener('click', function(){
-      hide(loginModal);
-    });
-
-    
-    lightbox.addEventListener('click', function(){
-      hide(loginModal);
-    });
-  </script>
 </html>
 
 
