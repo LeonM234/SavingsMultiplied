@@ -341,9 +341,9 @@ on the bottom social links, along with other formatting.
 /* Modal
 =========*/
 
-.login-modal {
+/* .login-modal {
   display: none;
-}
+} */
 
 .lightbox {
   background: #000;
@@ -363,4 +363,8 @@ on the bottom social links, along with other formatting.
   position: absolute;
   top: 0;
   left: 50%;
+}
+
+.hidden {
+  display: none;
 }
