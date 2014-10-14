@@ -26,11 +26,13 @@ function toggle(element) {
 
   element.className = classes.join(' ');
   }
-}
 
-for (var i = 0; i < loginModalToggleAreas.length; i++){
-   loginModalToggleAreas[i].addEventListener('click', function() {
-      toggle(loginModal);
+  for (var i = 0; i < loginModalToggleAreas.length; i++){
+     loginModalToggleAreas[i].addEventListener('click', function() {
+        toggle(loginModal);
     });
   }
 });
+
+
+

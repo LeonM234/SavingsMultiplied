@@ -233,6 +233,7 @@ ul li {
 #social {
   padding: 0;
   margin: 1em 1em;
+  clear: both;
 }
 
 #social li {
