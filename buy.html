@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Leon's SavingsMultiplied</title>
+    <link rel="stylesheet" type="text/css" href="styles/normalize.css">
+    <link rel="stylesheet" type="text/css" href="styles/buy.css">    
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <meta charset="utf-8" />
+    <link href='http://fonts.googleapis.com/css?family=Comfortaa:400,700,300' rel='stylesheet' type='text/css'>
+  </head>
+  <body>
+  <div class="container">
+    <header>
+        <nav id="sign_in">
+          <ul>
+            <li><a href="#" class="login">sign in</a></li>
+            <li><a href="#">sign up</a></li>
+          </ul>
+        </nav>
+      <section>
+        <h1>Savings <span>Multiplied</span></h1>
+        <nav id="top_links">
+          <ul>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Contact</a></li>
+            <li><a href="#">Blog</a></li>
+            <li><a href="#">Press</a></li>
+          </ul>
+        </nav>
+        <h3>where parents of multiples save, sell &amp; share</h3>
+      </section>
+      <nav id="main">
+        <ul>
+          <li><a href="#">Buy</a></li>
+          <li><a href="#">Sell</a></li>
+          <li><a href="#">How it Works</a></li>
+          <li><a href="#">Links</a></li>
+          <li><a href="#">Community</a></li>
+          <li>
+            <form action="#" method="GET">
+              <label for="search_term"></label>
+              <input id="search_term" type="text" placeholder="search">
+              <input type="submit" value="Search">
+            </form>
+          </li>
+        </ul>
+      </nav>
+    </header>
+    <section class="buy_middle">
+      <div class="buy_left_column">
+	      <p>Limit your search by:</p>
+	      <form action="#" method="GET">
+          <label for="search_buy"></label>
+          <input id="search_buy" type="text" placeholder="search">
+          <input type="submit" value="Search">
+        </form>
+	      <p>Condition:</p>
+	      <ul id="condition">
+	        <li><form><input type="radio" name="condition" value="New"> New</form></li>	  
+	        <li><form><input type="radio" name="condition" value="Gently Used"> Gently Used</form></li>
+	      </ul>
+	      <p>Size:</p>
+	      <ul id="size">
+	        <li><form><input type="radio" name="size" value="4"> 4</form></li>	  
+	        <li><form><input type="radio" name="size" value="5"> 5</form></li>
+	        <li><form><input type="radio" name="size" value="6"> 6</form></li>	  
+	        <li><form><input type="radio" name="size" value="7"> 7</form></li>	
+	        <li><form><input type="radio" name="size" value="8"> 8</form></li>	  
+	        <li><form><input type="radio" name="size" value="9"> 9</form></li>	
+	        <li><form><input type="radio" name="size" value="10"> 10</form></li>	  
+	        <li><form><input type="radio" name="size" value="11"> 11</form></li>			  
+	      </ul>
+	      <p>Season:</p>
+	      <ul id="season">
+	        <li><form><input type="radio" name="season" value="All Seasons"> All Seasons</form></li>	  
+	        <li><form><input type="radio" name="season" value="Spring"> Spring</form></li>
+	        <li><form><input type="radio" name="season" value="Summer"> Summer</form></li>	  
+	        <li><form><input type="radio" name="season" value="Fall"> Fall</form></li>	
+	        <li><form><input type="radio" name="season" value="Winter"> Winter</form></li>		
+	      </ul>
+	      <p>Type:</p>
+	      <ul id="type">
+	        <li><form><input type="radio" name="type" value="Any"> Any</form></li>	  
+	        <li><form><input type="radio" name="type" value="One-Piece"> One-Piece</form></li>
+	        <li><form><input type="radio" name="type" value="Tops"> Tops</form></li>	  
+	        <li><form><input type="radio" name="type" value="Bottoms"> Bottoms</form></li>		
+	      </ul>
+	      <p>Brand:</p>
+      </div>
+      
+      <div class="buy_right_column">
+	       <p>sort by:</p>
+	       <ul id="page_jump">
+	         <li><a href="#">prev</a></li>
+	         <li><a href="#">page num.</a></li>
+	         <li><a href="#">next</a></li>
+	         <li><a href="#">view all</a></li>
+	        </ul>
+        <div class="box_wrapper">
+          <!-- <div class="container_box"> here -->
+        </div>
+      </div>
+    </section>
+    <footer>
+      <nav>
+        <ul>
+          <li><a href="#">Link here</a></li>
+          <li><a href="#">Link here</a></li>
+          <li><a href="#">Link here</a></li>
+          <li><a href="#">Link here</a></li>
+          <li><a href="#">Link here</a></li>
+          <li><a href="#">Link here</a></li>
+        </ul>
+      </nav>
+    </footer>
+    <div class="login-modal hidden">
+      <div class="lightbox"></div>
+      <div class="login-form">
+	<form>
+	  <label>Username</label>
+	  <input type="text" placeholder="username">
+	  <label>Password</label>
+	  <input type="password" placeholder="password">
+	  <input type="submit" value="Login">
+	  <input type="button" value="Cancel">
+	</form>
+      </div>
+    </div>
+  </div>
+  <script src="scripts/main.js"></script>
+  </body>
+</html>
+
